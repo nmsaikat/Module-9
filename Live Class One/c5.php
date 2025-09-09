@@ -1,7 +1,18 @@
 <?php
-$username = "jimy";
-$password = "12345";
+// $username = "jimmy";
+// $password = 12345;
 
-$userData = file_get_contents('users.json');
+$username = "admin";
+$password = "admin123";
+
+$userData = file_get_contents("users.json");
 $users = json_decode($userData, true);
-print_r($users);
+
+foreach ($users as $u=>$p){
+    if ($u==$username && $p==$password){
+        echo "Login Successful\n";
+        exit;
+    }
+}
+
+echo "Login Failed\n";

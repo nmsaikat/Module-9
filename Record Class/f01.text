@@ -1,5 +1,8 @@
-fruits = []
-fruits.append("apple")
-fruits.append("banana")
-fruits.append("orange")
-print(fruits)
+Mercury
+Uranus
+arth
+Mars
+Jupiter
+Saturn
+Uranus
+Neptune
